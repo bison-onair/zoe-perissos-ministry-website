@@ -1,0 +1,208 @@
+header {
+    padding: 1rem;
+    background-color: #b0de7f;
+}
+
+body { /* everything pretty much */
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+main { /* texts and the heroes */
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+}
+
+section { /* section from html */
+    margin-bottom: 3px;
+}
+
+nav ul{ /* this affects what's inside nav's ul (also this is the top bar)*/
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    gap: 1.5rem;
+    max-width: 900px;
+}
+
+nav ul li a { /* the top bar */
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul li a:hover { /* mouse hover */
+    text-decoration: underline;
+}
+
+nav ul li a.active {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+nav ul .cta a {
+    background-color: #4bda63;
+    transition: background-color 0.45s ease, border-color 0.45s ease;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+nav ul .cta a:hover {
+    background-color: #3ec955;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+#hero {
+    margin-bottom: 4rem;
+}
+
+#hero img {
+    width: 100%;
+    display: block;
+}
+
+#about, #newsletters {
+    padding-top: 1rem;
+}
+
+#about {
+    border-top: 1px solid #ddd;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    margin-top: 2.5rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.newsletter-list{
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.newsletter-card{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #b0de7f;
+    transition: background-color 0.45s ease, border-color 0.45s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-card a{
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+
+.newsletter-card:hover{
+    border-color: #aaa;
+    background-color: #4bda63;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    main {
+        padding: 1.25rem;
+    }
+
+    .newsletter-list{
+        grid-template-columns: 1fr;
+    }
+
+    .quote-footer {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: center;
+    }
+}
+
+#hero p:first-of-type {
+    font-style: italic;
+    opacity: 0.85;
+}
+
+.featured-quote {
+    background-color: #eaf5d9;
+    padding: 1rem 1rem;
+}
+
+.featured-quote img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 0.75rem;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.quote-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.quote-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.email-btn {
+    background-color: #4bda63;
+    transition: background-color 0.45s ease, border-color 0.45s ease;
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.email-btn:hover {
+    background-color: #3ec955;
+}
